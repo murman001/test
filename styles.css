@@ -1,0 +1,237 @@
+/* Обнуляем стандартные стили для всей страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Устанавливаем фон и шрифт для всей страницы */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Стили для навигационного меню */
+.nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Стили для раздела приветствия */
+.welcome-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.show-more-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Стили для раздела проектов */
+.projects-section {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+}
+
+.projects-section-header {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Стили для раздела контактов */
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contact-section-header h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-details {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Выравнивание навигации по правому краю */
+.nav {
+    background-color: #333;
+    color: #fff;
+    text-align: right; /* Изменено на право */
+    padding: 10px 0;
+}
+
+/* Выравнивание текста в разделе приветствия по левому краю */
+.welcome-section {
+    text-align: left; /* Изменено на лево */
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* Расположение фотографий справа от текста */
+.welcome-section p img {
+    float: right; /* Фото выравнивается справа */
+    margin-left: 20px; /* Добавлено небольшое расстояние между текстом и фото */
+}
+
+/* Дополнительные стили, чтобы текст в разделе приветствия не перекрывал фотографии */
+.additional-info {
+    clear: right; /* Очистка справа, чтобы не перекрывать фото */
+}
+/* Устанавливаем изображения в один ряд */
+.welcome-section img {
+    display: inline-block; /* Изображения в строчном режиме */
+    vertical-align: middle; /* Выравнивание по вертикали по средине */
+    max-width: 50%; /* Максимальная ширина изображений (вы можете настроить по вашему усмотрению) */
+    margin: 0 10px; /* Добавляем небольшой отступ между изображениями */
+}
+
+/* Очищаем с обеих сторон, чтобы следующие элементы не выравнивались с изображениями */
+.additional-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Стили для раздела проектов */
+.projects-section {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.projects-section-header {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Центрирование текста внутри блока */
+}
+
+/* Устанавливаем максимальную ширину для изображений внутри проектов */
+.project-image {
+    max-width: 100%;
+    height: auto; /* Это обеспечивает пропорциональное изменение высоты изображения */
+}
+
+.project-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Дополнительные стили, если текст проекта слишком длинный и выходит за пределы блока */
+.project-description {
+    max-height: 100px; /* Устанавливаем максимальную высоту блока описания */
+    overflow: hidden; /* Обрезаем текст, если он выходит за пределы блока */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
