@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"/>     
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- START NAV -->
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">Обо мне</a>
+            </li>
+            <li>
+                <a href="#projects">Проекты</a>
+            </li>
+            <li>
+                <a href="#contact">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END NAV -->
+
+<!-- START WELCOME SECTION -->
+<section id="welcome-section" class="welcome-section gallery">
+    <div class="">
+   
+</div>
+    <div class="image-row">
+        <img src="photo1.jpg" alt="Фотография 1">
+        
+    </div>
+    <div><p>Привет!</p>
+        <p>Меня зовут Мурман</p>
+        <p>Недавно я начал изучать веб-разработку</p></div>
+
+    <!-- Кнопка "Подробнее" -->
+    <button class="show-more-button" onclick="toggleAdditionalInfo()">Подробнее</button>
+
+    <!-- Дополнительная информация (скрыта по умолчанию) -->
+    <div id="additional-info" class="additional-info">
+        <p>Летом 2023 я прошел курс по HTML и CSS от freecodecamp.org.</p>
+        <p>Также у меня есть опыт работы с разными CMS (Prestashop, Wordpress, Bitrix 1C).</p>
+        <p>В свободное время я люблю кататься на скейте и сноуборде.</p>
+        <div class="image-row">
+            <div class="image"><img src="photo2.jpg" alt="Фотография 2"></div>
+            <div class="image"><img src="photo3.jpg" alt="Фотография 3"></div>
+        </div>
+    </div>
+</section>
+<!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">Мои проекты</h2>
+        <div class="projects-grid">
+            <a href="https://meinfell.de/en/" target="_blank" class="project project-tile">
+                <img class="project-image" src="photo5.jpg" alt="project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Meinfell.de online store
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://streetlab74.ru/" target="_blank" class="project project-tile">
+                <img class="project-image" src="photo6.jpg" alt="project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Streetlab74
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://myrecruitmentpartners.com//" target="_blank" class="project project-tile">
+                <img class="project-image" src="photo7.jpg" alt="project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    My Recruitment Partners
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>      
+        </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Как со мной сязаться</h2>            
+        </div>
+        <div class="contact-links">
+            </a>
+            <a href="https://t.me/murman001" target="_blank" class="btn contact-details">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+            <a href="mailto:murman001@gmail.com" class="btn contact-details">
+                <i class="fas fa-at"></i> Email
+            </a>            
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer>
+        <p>
+            **Страничка создана для выполнения тестового задания.
+        </p>        
+    </footer>
+    <!-- END FOOTER SECTION -->
+</body>
+</html>
